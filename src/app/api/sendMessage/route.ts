@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   const { name, telegram } = await req.json(); 
   const BOT_TOKEN = '7559277781:AAFvhxAlszD0JcUlwTL9QO2JRIFQ0kLh8EQ';
 
-  const CHAT_ID = '7559277781';
+  const CHAT_ID = '1846177436';
 
   const message = `Имя: ${name}\nTelegram: ${telegram}`;
 
