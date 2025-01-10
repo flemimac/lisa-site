@@ -136,7 +136,7 @@ export default function Home() {
               <div className={styles.application__h}>
                 <h1>оставить<br></br> заявку</h1>
                 <Image
-                  src={'/vector.svg'}
+                  src={'/Vector.svg'}
                   width={292}
                   height={200}
                   alt=""
