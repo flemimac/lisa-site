@@ -31,7 +31,7 @@ export default function Grid() {
             </div>
             <div className={styles.grid__video}>
                 <video width="628" height="403" muted autoPlay preload="none" loop className={styles.roundedImage}>
-                    <source src="/lisa.mp4" type="video/mp4" />
+                    <source src="/lisa.webm" type="video/webm" />
                     Браузер не поддерживает видео
                 </video>
                 {/* <Image

@@ -8,7 +8,7 @@ import '../styles/swiper.css'
 import Image from 'next/image';
 
 export default function Details() {
-    const images = ['/details-kvar.svg', '/details-kvar.svg', '/details-kvar.svg', '/details-kvar.svg'];
+    const images = ['/swiper1.webp', '/swiper2.webp', '/swiper3.webp', '/swiper4.webp'];
     return (
         <section className={styles.details} id="details">
             <div>

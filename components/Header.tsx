@@ -14,7 +14,7 @@ export default function Header() {
       </div>
       <div className={styles.links}>
         <a href="#details">главная</a>
-        <a href="#form">детали</a>
+        <a href="#func">детали</a>
         <a href="#footer">контакты</a>
       </div>
       <a href="#form" className={styles.about}>Оставить заявку</a>

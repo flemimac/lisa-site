@@ -3,7 +3,7 @@ import styles from "../styles/func.module.css";
 
 export default function Func() {
     return (
-        <section className={styles.func}>
+        <section className={styles.func} id='func'>
             <h3 className={styles.func__title}>функционал</h3>
             <div className={styles.func__content}>
                 <div className={styles.func__left}>
