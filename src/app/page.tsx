@@ -8,7 +8,6 @@ import Func from "../../components/Func";
 import FromApp from "../../components/FromApp";
 import Footer from "../../components/Footer";
 
-import Image from "next/image";
 import styles from "./page.module.css";
 import './../../styles/font.css';
 
