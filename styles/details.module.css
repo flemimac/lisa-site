@@ -1,0 +1,165 @@
+.details {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.details>div {
+    width: 100%;
+}
+
+.details__h {
+    position: relative;
+    display: inline-block;
+}
+
+.details__h h2 {
+    font-size: 13vw;
+    font-family: 'SF PRO';
+    font-stretch: expanded;
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    margin: 3vw 0;
+}
+
+.details__image {
+    position: absolute;
+    top: 30%;
+    right: -16.5%;
+    width: 12vw;
+    height: auto;
+}
+
+.details__grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+.details__grid>img {
+    margin-right: 2.9vw;
+    padding: 10px;
+    border-radius: 40px;
+    background: #1C1C1C;
+}
+
+.block__p {
+    font-size: 4.3vw;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'SF Pro';
+    font-weight: 500;
+    width: 50vw;
+    margin-bottom: 30px;
+}
+
+.grid__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: calc(53.3vw - 64px);
+}
+
+.block__grid {
+    position: relative;
+}
+
+.details__kvar {
+    width: calc(43.3vw - 64px);
+    height: auto;
+    background-color: #1C1C1C;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.kvar__container {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.kvar__image {
+    width: 100%;
+    height: auto;
+}
+
+.block__drag {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-drag: none;
+    -moz-user-select: none;
+    width: 100%;
+    height: auto;
+}
+
+.block__grid p {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    font-size: 1.2vw;
+    text-align: justify;
+    width: 25vw;
+    font-family: SF Pro;
+    font-weight: 300;
+}
+
+@media (max-width: 850px) {
+    .block__grid {
+        width: calc(100vw - 16px);
+        margin-bottom: 16px;
+    }
+
+    .details__kvar {
+        width: calc(100vw - 40px);
+        padding: 0;
+    }
+
+    .block__grid p {
+        font-size: 2.4vw;
+        width: 47vw;
+    }
+
+    .block__p {
+        font-size: 8vw;
+        width: calc(100vw - 16px);
+        margin-bottom: 16px;
+    }
+
+    .block__drag {
+        width: 96%;
+        height: auto;
+    }
+
+    .details__h h2 {
+        font-size: 21vw;
+        margin: 5vw 0;
+    }
+
+    .details__image {
+        position: absolute;
+        top: 27%;
+        right: -17.5%;
+        width: 21vw;
+        height: auto;
+    }
+
+    .details__grid {
+        padding: 10px;
+        background-color: #1C1C1C;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .kvar__image {
+        border-radius: 40px;
+    }
+
+    .grid__block {
+        width: calc(100vw - 16px);
+    }
+}

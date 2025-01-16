@@ -1,10 +1,13 @@
 import { NextResponse } from 'next/server';
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 export async function POST(req: Request) {
   const { name, telegram } = await req.json(); 
-  const BOT_TOKEN = '7559277781:AAFvhxAlszD0JcUlwTL9QO2JRIFQ0kLh8EQ';
 
-  const CHAT_ID = '1846177436';
+  const BOT_TOKEN = process.env.BOT_TOKEN;
+  const CHAT_ID = process.env.CHAT_ID;
 
   const message = `Имя: ${name}\nTelegram: ${telegram}`;
 

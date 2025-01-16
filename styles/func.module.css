@@ -1,0 +1,144 @@
+.func__title {
+    font-size: 12.8vw;
+    font-stretch: expanded;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+
+.func__content {
+    height: 30.5vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 27.9px;
+    padding: 8px;
+}
+
+.func__bg {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    width: 100vw;
+    height: auto;
+}
+
+.func__image {
+    width: 39vw;
+    height: auto;
+    border-radius: 27.9px;
+}
+
+.func__char {
+    width: 22vw;
+    display: flex;
+    align-items: center;
+}
+
+.func__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+    padding: 0 0 0 3vw;
+    height: 100%;
+}
+
+.func__char:last-child {
+    flex-basis: 100%;
+    justify-self: start;
+}
+
+.func__right > .func__char:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.func__right > .func__char:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.func__right > .func__char:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.func__right > .func__char:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.char__left {
+    margin-right: 2vw;
+}
+
+.char__title {
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.char__text {
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    opacity: 0.7;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+
+@media (max-width: 850px) {
+    .func__title {
+        margin: 8vw 0 6vw;
+    }
+
+    .func__content {
+        flex-direction: column;
+        height: auto;
+        background-color: #171717;
+    }
+
+    .func__right {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        height: 100%;
+        padding: 30px;
+    }
+
+    .func__right > .func__char:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .func__bg {
+        display: none;
+    }
+
+    .func__image {
+        width: calc(100vw - 40px);
+    }
+
+    .func__char {
+        width: 85%;
+        margin-bottom: 39px;
+    }
+
+    .func__char:last-child {
+        margin-bottom: 0;
+    }
+
+    .char__title {
+        font-size: 4vw;
+    }
+    
+    .char__text {
+        font-size: 3.5vw;
+    }
+
+    .func__right {
+        background-image: url('../public/funcBgM.svg');
+        background-position: right top;
+        border-radius: 30px;
+        background-size: cover;
+    }
+}
